@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block title %}
+
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Default form contact -->
+<form class="text-center p-5 col-md-12" action="/register-room" method="POST">
+    <p class="h4 mb-4">Register The Room</p>
+    <div class='form-group'>
+        <input type="text" name="room_no" class="form-control mb-4" placeholder="Room No">
+    </div>
+    <div class='form-group'>
+        <input type="text" name="room_price" class="form-control mb-4" placeholder="Room Price">
+    </div>
+    <div class="form-group">
+        <select class="form-control" name="currency">
+        <option>Af</option>
+        </select>
+    </div>
+    <div class="form-group">
+     <button class="btn btn-info form-group" type="submit">Register Room</button>
+    </div>
+</form>
+
+
+{% endblock content %}
+
